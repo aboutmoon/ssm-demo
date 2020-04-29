@@ -1,11 +1,11 @@
 package com.demo.service;
 
-import com.demo.domain.Account;
+import com.demo.pojo.Account;
 
 import java.util.List;
 
 public interface IAccountService {
     public List<Account> findAll();
 
-    public void save(Account account);
+    public void insert(Account account);
 }

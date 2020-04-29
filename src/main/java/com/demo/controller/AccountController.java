@@ -1,6 +1,6 @@
 package com.demo.controller;
 
-import com.demo.domain.Account;
+import com.demo.pojo.Account;
 import com.demo.service.IAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -37,7 +37,7 @@ public class AccountController {
 
     @RequestMapping("save.do")
     public String save(Account account) {
-        accountService.save(account);
+        accountService.insert(account);
         return "success";
     }
 }
